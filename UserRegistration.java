@@ -1,11 +1,14 @@
 package com.bl.UserRegistrationProblem;
-
+/*
+ * @mod
+ * check the email and password registration filed 
+ */
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
 public class UserRegistration {
 	Scanner sc = new Scanner(System.in);
-	
+	// check the first name should be start with Capital latter
 	public void checkFirst() {
 		System.out.println("Enter First name Start with capital latter");
 		String firstName = sc .nextLine();
@@ -16,6 +19,7 @@ public class UserRegistration {
 			System.out.println("First Name is Not valid");
 		}
 	}
+	//check the last name should be start with Capital latter
 	public void checklastName(){
 		System.out.println("Enter Last Name Start with capital latter");
 		String LastName = sc .nextLine();
@@ -26,6 +30,7 @@ public class UserRegistration {
 			System.out.println("Last Name is not valid");
 		}
 	}
+	//check given email are valid or not
 	public void validEmail() {
 		System.out.println("Enter a Email");
 		String Email = sc .next();
@@ -36,6 +41,7 @@ public class UserRegistration {
 			System.out.println("Email is not valid");
 		}
   }
+	// check the password with rule and minimum 8 length
 	public void checkPassword() {
 		System.out.println("Enter the Password");
 		String password = sc.nextLine();
@@ -46,6 +52,7 @@ public class UserRegistration {
 			System.out.println("password is not valid");
 		}
 	}
+	// check upper case 
 	public void upperCase() {
 		System.out.println("In password present at least one Upper case alphabet");
 		String Uppercase = sc.nextLine();
@@ -56,6 +63,7 @@ public class UserRegistration {
 			System.out.println("Alphabet is not  present");
 		}
 	}
+	// check at least one numeric number 
 	public void numericNumber() {
 		System.out.println("In password present At least one Numeric number");
 		String Numeric = sc.nextLine();
@@ -66,6 +74,7 @@ public class UserRegistration {
 			System.out.println("Numeric Number is not present");
 		}
 	}
+	//check special character present
 	public void specialCharacter() {
 		System.out.println("In password present exact one special character");
 		String Special = sc.nextLine();
